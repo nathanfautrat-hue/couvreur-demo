@@ -7,6 +7,9 @@ Démo Studio FTT à réutiliser pour les prospects couvreurs (avatar 02). À cop
 - Certifications (RGE / Qualibat / décennale) : ne garder que celles que l'entreprise a vraiment
 - Photos `img/` : ce sont des photos Pexels d'illustration, à remplacer par les vrais chantiers du client
 - Formulaire contact : pas branché (à relier à une Cloudflare Function + Resend si le client signe)
+- Anti-référencement (démo) : balise `noindex` dans les 3 pages + fichier `_headers`. **À RETIRER quand un client signe**, sinon son vrai site n'apparaîtra jamais sur Google.
+
+Usage prospection : un seul site en ligne par métier, recyclé. Pour chaque prospect, on remplace les placeholders par son nom/ville et on pousse ; le prospect suivant écrase le précédent. Les versions personnalisées restent dans les fichiers locaux.
 
 Pages : `index.html` (accueil), `services.html`, `contact.html` · `style.css` · `script.js`
 Références design : Menuiserie Ferrand, Quoti, SWEB (cf. `references-design.md`)
