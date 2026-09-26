@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devis gratuit couvreur à [Ville] — [NOM] Couverture</title>
+<meta name="description" content="Demandez un devis gratuit à votre couvreur à [Ville]. Déplacement gratuit, réponse sous 48h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-name">[NOM] Couverture</span>
+      <span class="brand-sub">Couvreur · <span class="ph">[Ville]</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#chantiers">Réalisations</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span class="header-phone"><span class="ph">06 — à renseigner</span></span>
+      <a href="contact.html" class="btn btn--solid">Devis gratuit</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="img/hero-ardoise.jpg" alt="" fetchpriority="high">
+  <div class="container">
+    <p class="kicker">Devis gratuit sous 48h · <span class="ph">[Ville]</span></p>
+    <h1>Parlons de <em>votre toit.</em></h1>
+  </div>
+</section>
+
+<div class="slates" aria-hidden="true"></div>
+
+<section>
+  <div class="container contact-layout">
+    <div class="contact-info">
+      <h2>On monte voir, gratuitement.</h2>
+      <p class="lede">Décrivez-nous le problème en deux lignes. On vous rappelle pour fixer un passage, puis on vous remet un devis détaillé sous 48h.</p>
+      <ul class="contact-lines">
+        <li><span>Téléphone</span><span class="ph">06 — à renseigner</span></li>
+        <li><span>Email</span><span class="ph">contact@[domaine].fr</span></li>
+        <li><span>Adresse</span><span class="ph">Adresse à renseigner</span></li>
+        <li><span>Horaires</span><span class="ph">À renseigner</span></li>
+        <li><span>Zone</span><span><span class="ph">[Ville]</span> et tout <span class="ph">[Département]</span></span></li>
+      </ul>
+    </div>
+
+    <form class="form" onsubmit="return false;">
+      <div class="form-row">
+        <div class="field">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="ville">Ville du chantier</label>
+          <input type="text" id="ville" name="ville" autocomplete="address-level2" required>
+        </div>
+        <div class="field">
+          <label for="travaux">Type de travaux</label>
+          <select id="travaux" name="travaux">
+            <option>Fuite / réparation</option>
+            <option>Réfection complète</option>
+            <option>Zinguerie</option>
+            <option>Charpente</option>
+            <option>Isolation / étanchéité</option>
+            <option>Velux / lucarne</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Le problème en quelques mots</label>
+        <textarea id="message" name="message" placeholder="Ex : tache au plafond de la chambre depuis l'orage de mardi"></textarea>
+      </div>
+      <button type="submit" class="btn btn--solid">Envoyer ma demande</button>
+      <p class="form-legal">Vos informations servent uniquement à vous recontacter pour ce devis. <a href="#" style="text-decoration:underline;">Politique de confidentialité</a>.</p>
+    </form>
+  </div>
+</section>
+
+<div class="slates slates--flip" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-name">[NOM] Couverture</span>
+          <span class="brand-sub">Couvreur · Zingueur · Charpentier — <span class="ph">[Ville]</span></span>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="ph">Adresse à renseigner</span></li>
+          <li><span class="ph">06 — à renseigner</span></li>
+          <li><span class="ph">contact@[domaine].fr</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#chantiers">Réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>SIRET <span class="ph">à renseigner</span> · <a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+      <span>Site réalisé par Studio FTT</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
